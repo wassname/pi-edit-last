@@ -1,19 +1,11 @@
 # pi-edit-last
 
 Edit assistant replies since the last user message in your external editor (Zed, VS Code, etc.).
- 
-## Installation
 
-```json
-// settings.json
-{
-  "extensions": ["git:github.com:wassname/pi-edit-last@main"]
-}
-```
+## Install
 
-Or symlink:
 ```bash
-ln -s /path/to/pi-edit-last ~/.pi/agent/extensions/edit-last
+pi install git:github.com:wasname/pi-edit-last
 ```
 
 Then `/reload` in pi.
@@ -32,3 +24,7 @@ Uses `$VISUAL` or `$EDITOR` (falls back to `vi`). Set in your shell:
 ```bash
 export VISUAL=zed  # or code, vim, etc.
 ```
+
+## Related
+
+- [pi-studio](https://github.com/omaclaren/pi-studio) — Collection of pi extensions

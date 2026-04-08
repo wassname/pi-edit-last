@@ -1,1 +1,13 @@
-{"name":"pi-edit-last","version":"1.0.0","description":"Edit assistant replies since last user message, with external editor support","keywords":["pi-package"],"pi":{"extensions":["./index.ts"]}}
+{
+    "name": "pi-edit-last",
+    "version": "1.0.0",
+    "description": "Edit assistant replies since last user message, with external editor support",
+    "keywords": [
+        "pi-package"
+    ],
+    "pi": {
+        "extensions": [
+            "./index.ts"
+        ]
+    }
+}
