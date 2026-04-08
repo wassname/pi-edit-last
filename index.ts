@@ -77,7 +77,12 @@ function buildRevisionPrompt(editedText: string): string {
 
 // Open editor and wait for it to close, returning the edited content
 function editInExternalEditor(content: string): string | null {
-  const editor = process.env.VISUAL || process.env.EDITOR || "vi";
+  let editor = process.env.VISUAL || process.env.EDITOR || "vi";
+
+  // VSCode needs --wait to block until file is closed
+  if (editor === "code") {
+    editor = "code --wait";
+  }
   
   const tmpDir = mkdtempSync(join(tmpdir(), "pi-edit-"));
   const tmpFile = join(tmpDir, "edit.txt");

@@ -1,6 +1,6 @@
 # pi-edit-last
 
-Edit assistant replies since the last user message in your external editor (Zed, VS Code, etc.).
+Edit assistant replies since the last user message in your external editor (Zed, VS Code, etc.). Then pi receives your edited version as a revision request.
 
 ## Install
 
@@ -27,4 +27,4 @@ export VISUAL=zed  # or code, vim, etc.
 
 ## Related
 
-- [pi-studio](https://github.com/omaclaren/pi-studio) — Collection of pi extensions
+- [pi-studio](https://github.com/omaclaren/pi-studio) — web editor
